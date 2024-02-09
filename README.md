@@ -55,6 +55,7 @@ Download inno Setup Compiler(Automatic python download + set your .py as applica
     [Run]
     Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: nowait postinstall skipifsilent
     Filename: "{app}\Python_Kernal_download.exe";
+    Filename: "{app}\ffmpeg_auto.exe";
 
 10. Click Build > Convert set file name "setting" and click store wait until process finishes
     You should set directory as python_interpreter_auto+kernal else, you will get error in result .exe file
